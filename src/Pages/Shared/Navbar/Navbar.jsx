@@ -38,13 +38,13 @@ const Navbar = () => {
     </li>
     </>
   return (
-    <div className="p-2 md:p-12">
+    <div className="p-2 md:p-6 lg:p-12">
       <div className="flex gap-4 ">
         <h1 className="font-bold text-3xl font-mitr ">pti.</h1>
         {/* search bar and dropdown */}
-          <div className="flex md:mx-56 items-center">
+          <div className="flex md:mx-20 lg:mx-56 items-center">
           <div className="justify-center ">
-            <form className=" md:w-[500px] relative">
+            <form className="md:w-[350px] lg:w-[500px] relative">
               <div className="relative ">
                 <input
                   type="search"

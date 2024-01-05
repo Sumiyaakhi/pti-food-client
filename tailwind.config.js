@@ -14,6 +14,9 @@ export default {
         teko: ['Teko', 'sans-serif'],
         mitr: ['Mitr', 'sans-serif'],
       },
+      colors: {
+        primary: "#FFA500", 
+      }
     },
   },
   plugins: [require("daisyui")],
