@@ -39,7 +39,7 @@ const Navbar = () => {
     </>
   return (
     <div className="p-2 md:p-6 lg:p-12">
-      <div className="flex gap-4 ">
+      <div className="flex gap-4 mb-3">
         <h1 className="font-bold text-3xl font-mitr ">pti.</h1>
         {/* search bar and dropdown */}
           <div className="flex md:mx-20 lg:mx-56 items-center">
@@ -80,6 +80,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <hr />
     </div>
   );
 };
