@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 
 
 const ImageForm = () => {
- 
+const [newData, setNewData] = useState([]) 
 
     const {
         register,
@@ -15,7 +15,8 @@ const ImageForm = () => {
 
       const onSubmit = (data) => {
         console.log(data);
-        
+        setNewData(data)
+        window.location.reload();
       };
     
     
