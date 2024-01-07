@@ -9,7 +9,7 @@ or
 - yarn dev
 
 
-Live site()
+Live site("https://nimble-speculoos-675a10.netlify.app/)
 
 
 About this project:

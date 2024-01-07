@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import ImageForm from "./ImageForm";
+import axios from 'axios';
 
 const ImageGallery = () => {
     const settings = {
@@ -23,9 +24,7 @@ const ImageGallery = () => {
   const [recommended, setRecomended] = useState([]);
 
   useEffect(() => {
-    fetch(
-      "data.json"
-    )
+    fetch("data.json")
       .then((res) => res.json())
       .then((data) => {
         setData(data)
