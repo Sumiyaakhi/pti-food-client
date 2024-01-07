@@ -1,8 +1,20 @@
-# React + Vite
+Front End Project - pti. Food Delivery Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+How can we use this project
+- npm install or (npm install --force)
+ or
+-  yarn install
+- npm run dev
+or
+- yarn dev
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live site()
+
+
+About this project:
+- It has a navbar with search bar, router button, user logo and project logo.
+- Then it has banner with an image.
+- After this section, it has 2 types of image gallery. The gallery is created from the given API and filtered with IsRecommended and IsPopular true condition.
+- The next section is extra section. I created this for more time which is given from you(Thank you).
+- At the last section is footer which is given using image.

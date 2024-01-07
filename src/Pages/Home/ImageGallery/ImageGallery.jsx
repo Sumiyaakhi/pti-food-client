@@ -43,7 +43,7 @@ const ImageGallery = () => {
         console.log("Popular Items Items:", popularItems);
       })
       .catch((error) => console.error("Error fetching data:", error));
-  },[]);
+  });
 
   return (
     <>
@@ -52,7 +52,10 @@ const ImageGallery = () => {
         <div className="my-10">
           <div className="flex justify-between m-6 ">
             <h5 className="text-xl">Popular</h5>
-            <button className="text-primary text-xl">Add More</button>
+            <button className="text-primary text-xl" onClick={()=>document.getElementById('my_modal_5').showModal()}>Add More</button>
+            <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+  <ImageForm popular={popular}></ImageForm>
+</dialog>
           </div>
           
 
@@ -76,7 +79,7 @@ const ImageGallery = () => {
             <h5 className="text-xl">Recommended</h5>
             <button className="text-primary text-xl" onClick={()=>document.getElementById('my_modal_5').showModal()}>Add More</button>
             <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-  <ImageForm></ImageForm>
+  <ImageForm recommended={recommended}></ImageForm>
 </dialog>
           </div>
           

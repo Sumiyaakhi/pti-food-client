@@ -2,20 +2,22 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 
-const ImageForm = () => {
-const [newData, setNewData] = useState([]) 
-
+const ImageForm = ({popular, recommended}) => {
+const [popularData, setPopularData] = useState(popular);
+const [recommendedData, setRecommendedData] = useState(recommended);
+       console.log(popular, recommended);
     const {
         register,
         handleSubmit,
-        setError,
         formState: { errors },
       } = useForm()
     
 
       const onSubmit = (data) => {
         console.log(data);
-        setNewData(data)
+        setPopularData(data)
+        setRecommendedData(data)
+       
         window.location.reload();
       };
     
