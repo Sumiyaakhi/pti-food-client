@@ -18,3 +18,4 @@ About this project:
 - After this section, it has 2 types of image gallery. The gallery is created from the given API and filtered with IsRecommended and IsPopular true condition.
 - The next section is extra section. I created this for more time which is given from you(Thank you).
 - At the last section is footer which is given using image.
+- I am using the API making the json data .Because the given API is not secure. That's why the data is blocked after deployment.
